@@ -1,0 +1,481 @@
+javaScript
+
+-> javascript is a scripting and programming language which is used to add live scripting or dynamic responce on a webpage.
+-> Netscape communication hire brendan Eich to develop a scripting language for their browser netscape navigator.
+-> Eich created javascript in just 10 days.
+-> The language was first called (MOCHA). Then changed to livescript and finally javaScript (not bcz it related 
+-> to java but is a marketing decision to capitalise on java's popularity).
+-> js is used to building logic of a webpage.
+-> it is a high level programming language used in both client side as wel as server side.
+-> Currently we are using js version 6 i.e. ES6(ECHMA SCRIPT 6), Which is also called as vanila js.
+-> node js is the run time environment of js.
+
+What is scripting language?
+
+1- A scripting language is a type of programming language use to automate task that executes line by line.
+  Ex=- js, python, PHP, etc.
+
+  Variable keywords in js:
+
+1- Variable keywords are used to declare a variable and to initialize a value in a variable.
+2- There are 3 types of vafriable keywords:- var, let and const
+
+var:- If a variable is declared using var keyword then we can declare and re initialize the same variable.
+
+let:- If a variable is declared using let keyword then we can reinitialized but we cab't redeclare. 
+
+const:- const stands for constant.
+      - if a variable is declare using const keyword then neither we redeclare nor reinitialize the same variable.
+
+----------------------------------------------------------------------------------------------------------------------
+
+# Datatypes in JS:- 
+-Datatypes are used to define which type of value we're storing on a variable.
+- By using 'typeof' operator we can check the datatype of a varibale.
+-There are two types of datatypes in JavaScript:-
+    1.Primitive type
+    2.Non-primitive type
+Note:- JavaScript is a dynamic typed language that means, datatype of a variable is assigned based on the value passed by the user during runtime.
+
+1. Primitive-type:-
+## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
+
+## String type:- Anything enclosed within single(' ') or double(" ") quote is known as string in JS.
+-Basically String is a sequence of character used to represent text.
+-We can access each character by using index numbers. string[0], string[1].... .
+
+## boolean type:- It has only two types of values, i.e true and false.
+-In JavaScript value of true is 1 and value of false is 0.
+
+## null type:- Null means nothing, which is inherited from Object type. It stores nothing.
+
+## undefined type:-When a variable is declared but not assigned a value, it is automatically initialized with undefined.
+
+## Symbol type:– Used for creating unique values (Symbol("unique"))
+-To create a Symbol type variable we need Symbol() operator.
+
+## BigInt type:– Handles very large numbers (BigInt())
+-To create a BigInt type varibale we need BigInt() operator.
+
+2. Non-primitive type or Reference Datatype
+-Reference datatypes are the type of datatype which can hold multiple element in a single variable.
+-Reference datatypes are -> array, object, function
+## Array :-Array is a collection of heterogenious(different datatypes) type of data.
+-Array indexing start from "0", and to access any value we can use the index position, and arrays are dynamic in size.
+-Arrays are used to store multiple values inside a single variable.
+ex. let arr = ["hari", "sita", "ram"] 0 1 2
+
+## Object :-Objects are complex data types used to store collection of key value pairs.
+-Objects can contain various datatypes, including primitive and non-primitive.
+-Keys are unique within an object, and they are used to access the values.
+-We can access the value of an object by using dot notation (object.keyName) or bracket notation (object["keyname"]).
+
+ex:-
+let obj = { name : "hari", 
+    phone : 56789032, 
+    address : "bhubaneswar" 
+    }
+-In the above example left side element are the keys & right side elements are the values of that key.
+
+# Function :-
+-functions are the block of code or set of instruction which are used to perform some specific task.
+-function reduce our code complexity and help organize logic, improve readability, and make code reusable.
+-We need 'function' keyword to create a function in JS.
+
+Syntax :-
+function functionName(){ 
+    //instruction
+ }
+
+function calling ->
+functionName();
+
+# Operators in JS:- Operators are symbols used to perform operations on one or more variable and values.
+
+## Arithmetic Operator:-
+1. Addition (+): Adds two operands.
+2. Subtraction (-): Subtracts right operand from left operand.
+3. Multiplication (*): Multiplies two operands.
+4. Division (/): Divides left operand by right operand.
+5. Modulus (%): Returns the remainder of the division of left operand by right operand.
+6. Exponent (**): Used to raise a number to a power.
+
+## Assignment Operator:- 
+1. Simple Assignment (=): Assigns a value to a variable.
+2. Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to left operand.
+3. Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to left operand.
+4. Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to left operand.
+5. Division Assignment (/=): Divides the left operand by the right operand and assigns the result to left operand.
+6. Remainder Assignment (%=): Assigns the remainder of division between left and right operands to left operand.
+7. Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to left operand.
+
+## Comparision Operator:- 
+1. Equal to (==): Compares if two operands are equal.
+2. Not equal to (!=): Compares if two operands are not equal.
+3. Strict equal to (===): Compares if two operands are equal and of the same data type.
+4. Strict not equal to (!==): Compares if two operands are not equal and of the same data type.
+5. Greater than (>): Checks if left operand is greater than right operand.
+6. Less than (<): Checks if left operand is greater than or equal to right operand.
+7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
+8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
+
+## Logical Opercators :-
+1. Logical AND (&&): Returns true if both operands are true.
+2. Logical OR (||): Returns true if either of the operands is true.
+3. Logical NOT (!): Returns the opposite of the operand's boolean value.
+
+## Unary Operator:-
+Unary operator is an operator that works on a single operand.
+1. Increment (++):- Increases the value of a variable by 1.
+a) Pre-Increment :- increments first, then returns the value.
+b) Post-Increment :- returns the current value, then increments.
+2.Decrement (--):- Decreases the value of a variable by 1.
+a) Pre-Decrement :- decrements first, then returns the value.
+b) Post-Decrement:- returns the current value, then decrements.
+
+
+Conditional statement
+
+1. if:- 
+
+2. if-else statement:- When we have two statements but one condition then we use if-else condition.
+                 -> If the condition is true then statement under if block get execute. if false then
+                   else block will execute.
+
+                   syntax:- if(condition){
+                        statement
+                        }else{
+                        statement
+                        }
+
+3. else-if condition:- When we have multiple statement and multiple condition in that case we can use else-if condition.
+                  -> 1st condition thats true is executed, if none are true the else block executes.
+                  syntax:- if(condition){
+                    statement
+                  }else-if(condition){
+                    statement
+                  }else{
+                    statement
+                  }
+
+4. Switch case:- Switch statement is used to execute different blocks of code based on the value of an expression.
+               -> It provides a cleaner alternative to multiple if-else condition.
+               syntax:- switch(expression){
+                case value1:
+                     statement
+                      break
+                case value2:
+                      statement
+                      break
+                default:
+                     statement
+               }
+               -> break is a keyword which is used to terminate execution.
+    
+Array inbuilt methods:- array have a variety of built in methods that help us to manipulate and process 
+                        data efficiently.
+
+1. push():- It is an array in built method which is used to insert numbers of element into an array at its 
+            last index position.
+            ex:- array.push(newElements)
+
+2. pop():- It is an array inbuilt method used to remove one element from an array from its last index position.
+         ex:- array.pop()
+
+3. unshift:- It is used to add numbers of new elements into an array at its starting index position.
+           -> The previous index position in the array will be switched by new elements, so the original
+              elements in the array will switched to its next index position.
+              syntax:- array.unshift(newElements)
+
+4. shift:- It is used to remove one element from the starting index position from the original array.
+        -> It will make all other remaining elements in the array to shift to its previous index position.
+        syntax:- array.shift()
+
+5.splice:- It is used to addd or remove/replace numbers of elemnets from any specific index position from amn 
+           original array.
+        -> It has 3 arguments 1= startingindex 
+                              2= deletecount 
+                              3= newelements 
+        -> from the start index we can delete numbers of values and add new elements from the same index 
+           position. 
+        ex:- arr.splice(startindex, deletecount, newelements)
+
+6. slice:- It is used to create a sub array from an original array. '
+        -> It can't affect the original array.
+        -> It takes two arguments 1st- startindex, 2nd- endingindex
+        -> It takes out the elements fromn the start index till the end index excluding till the end index.
+        syntax:- array.slice(startIndex, endIndex)
+
+7. includes:- iit is used to find the existance of an element in an array.
+            -> if the element is found it returns true, if not it returns falls. 
+            -> it takes one argument that is searchvalue.
+            syntax:- array.includes(searchValue)
+
+
+8. reverse:- it is used to reverse the order of elements based on their index position. 
+            syntax:- array.reverse
+
+
+
+9. toString:- it is used to convert all the array elements into a single string.
+
+..................................................................................................
+
+# Datatypes in JS:- 
+-Datatypes are used to define which type of value we're storing on a variable.
+- By using 'typeof' operator we can check the datatype of a varibale.
+-There are two types of datatypes in JavaScript:-
+    1.Primitive type
+    2.Non-primitive type
+Note:- JavaScript is a dynamic typed language that means, datatype of a variable is assigned based on the value passed by the user during runtime.
+
+1. Primitive-type:-
+## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
+
+## String type:- Anything enclosed within single(' ') or double(" ") quote is known as string in JS.
+-Basically String is a sequence of character used to represent text.
+-We can access each character by using index numbers. string[0], string[1].... .
+
+## boolean type:- It has only two types of values, i.e true and false.
+-In JavaScript value of true is 1 and value of false is 0.
+
+## null type:- Null means nothing, which is inherited from Object type. It stores nothing.
+
+## undefined type:-When a variable is declared but not assigned a value, it is automatically initialized with undefined.
+
+## Symbol type:– Used for creating unique values (Symbol("unique"))
+-To create a Symbol type variable we need Symbol() operator.
+
+## BigInt type:– Handles very large numbers (BigInt())
+-To create a BigInt type varibale we need BigInt() operator.
+
+2. Non-primitive type or Reference Datatype
+-Reference datatypes are the type of datatype which can hold multiple element in a single variable.
+-Reference datatypes are -> array, object, function
+## Array :-Array is a collection of heterogenious(different datatypes) type of data.
+-Array indexing start from "0", and to access any value we can use the index position, and arrays are dynamic in size.
+-Arrays are used to store multiple values inside a single variable.
+ex. let arr = ["hari", "sita", "ram"] 0 1 2
+
+## Object :-Objects are complex data types used to store collection of key value pairs.
+-Objects can contain various datatypes, including primitive and non-primitive.
+-Keys are unique within an object, and they are used to access the values.
+-We can access the value of an object by using dot notation (object.keyName) or bracket notation (object["keyname"]).
+
+ex:-
+let obj = { name : "hari", 
+    phone : 56789032, 
+    address : "bhubaneswar" 
+    }
+-In the above example left side element are the keys & right side elements are the values of that key.
+
+# Function :-
+-functions are the block of code or set of instruction which are used to perform some specific task.
+-function reduce our code complexity and help organize logic, improve readability, and make code reusable.
+-We need 'function' keyword to create a function in JS.
+
+Syntax :-
+function functionName(){ 
+    //instruction
+ }
+
+function calling ->
+functionName();
+
+# Operators in JS:- Operators are symbols used to perform operations on one or more variable and values.
+
+## Arithmetic Operator:-
+1. Addition (+): Adds two operands.
+2. Subtraction (-): Subtracts right operand from left operand.
+3. Multiplication (*): Multiplies two operands.
+4. Division (/): Divides left operand by right operand.
+5. Modulus (%): Returns the remainder of the division of left operand by right operand.
+6. Exponent (**): Used to raise a number to a power.
+
+## Assignment Operator:- 
+1. Simple Assignment (=): Assigns a value to a variable.
+2. Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to left operand.
+3. Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to left operand.
+4. Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to left operand.
+5. Division Assignment (/=): Divides the left operand by the right operand and assigns the result to left operand.
+6. Remainder Assignment (%=): Assigns the remainder of division between left and right operands to left operand.
+7. Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to left operand.
+
+## Comparision Operator:- 
+1. Equal to (==): Compares if two operands are equal.
+2. Not equal to (!=): Compares if two operands are not equal.
+3. Strict equal to (===): Compares if two operands are equal and of the same data type.
+4. Strict not equal to (!==): Compares if two operands are not equal and of the same data type.
+5. Greater than (>): Checks if left operand is greater than right operand.
+6. Less than (<): Checks if left operand is greater than or equal to right operand.
+7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
+8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
+
+## Logical Opercators :-
+1. Logical AND (&&): Returns true if both operands are true.
+2. Logical OR (||): Returns true if either of the operands is true.
+3. Logical NOT (!): Returns the opposite of the operand's boolean value.
+
+## Unary Operator:-
+Unary operator is an operator that works on a single operand.
+1. Increment (++):- Increases the value of a variable by 1.
+a) Pre-Increment :- increments first, then returns the value.
+b) Post-Increment :- returns the current value, then increments.
+2.Decrement (--):- Decreases the value of a variable by 1.
+a) Pre-Decrement :- decrements first, then returns the value.
+b) Post-Decrement:- returns the current value, then decrements.
+
+
+# String and it's methods:-
+-Strings in JS are immutable, meaning once created their values can't be change. 
+
+## Template String:- 
+-The collection of character that is written inside backtick(``) is considered as 'template string'.
+-The advantage of using template string is- 
+i)It let's user to interpolin the dynamic variable of JS inside the string.
+ii)It lets user to initialize multiple lines of string.
+
+## Template Literals:-
+By using `${variableName}` we can create a dynamic variable that can be access inside an template string.
+Syntax:- `This is a template literals ${variableName}`
+
+## String inbuilt methods:- 
+1. indexOf():- It returns the first index occurrence of a specific substring within the original string.
+Syntax:- string.indexOf("subString")
+
+2. lastIndexOf():- It returns the last index occurrence of a specific substring within the original string.
+Syntax:- string.lastIndexOf("subString", endIndex)
+
+3. chatAt():- It returns the character at the specified index in the original string.
+Syntax:- string.chatAt(indexPosition)
+
+4. toUpperCase():- It converts all the characters in the string to uppercase.
+Syntax:- string.toUpperCase()
+
+5. toLowerCase():- It converts all the characters in the string to lowercase.
+Syntax:- string.toLowerCase()
+
+6. replace():- It replaces first occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replace("searchString", "newString")
+
+7. replaceAll():- It replaces all occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replaceAll("searchString", "newString")
+
+8. slice():- Extracts a section and returns a substring from start inex and end index but end index is excluded.
+Syntax:- string.slice(startIndex, endIndex)
+
+9. split():- It splits the string into an array of strings based on a specific separator.
+Syntax:- string.split("separator")
+
+10. length:- It is an operator used to find the length of a string.
+Syntax:- string.length
+
+# Function in JS:- 
+-Functions are a set of instruction or block of code used to perform some specific task.
+-There are two types of functions:-
+    -Pre-defined functions
+    -User-defined Functions
+
+## Pre-defined function:-
+-A function which is already written by JS developers with some specific task is known as pre-defined function.
+e.g:- push(), pop(), log(),....
+
+## User-defined function:- 
+- A function which is declared and written some instruction by the user is known as user-defined function.
+e.g: normal function,...
+-In JS to return a output from a function, we use "return" keyword.
+-There are two way we can create a function-
+i)-Type-A(Without parameter):- A function without parameters does not require any external input when called.
+-It simply executes a set of instructions.
+e.g:- function greet(){
+    print("Hello, everyone!")
+}
+greet()
+
+ii)-Type-B(With parameter):- A function with parameters allows us to pass values to customize its behavior.
+e.g:- function greet(name){
+    print(f"Hello, {name}!")
+}
+greet("Manas")  
+
+## Types of user-defined function:-
+1. Normal function:- A function which is declared using both function keyword and function name is known as normal function. 
+Syntax:- function functionName(parameter){
+    //instruction
+}
+
+2. Anonymous function:- A function which is declared without a function name but declared using function keyword and stored in a variable is called as anonymous function.
+Syntax:- const variableName = function(){
+    //instruction
+}
+
+3. Arrow function:- A function without a function keyword. 
+-Instead of function keyword we use arrow symbol.
+Syntax:- const functionName = ()=>{
+    //instruction
+}
+
+4. Callback function:- It is a function which is used to pass as an argument to another function.
+Syntax:- ()=>{
+    //instruction
+}
+
+# forEach() :-
+-It is a looping condition where the iterator of forEach loop will iterates through every elements in the array.
+Syntax:- array.forEach((iterator)=>{
+    //instruction
+})
+-It takes a Callback function as an argument in which the user will pass the iterator(accumulator) that iterates through every element of the array.
+
+# Array methods:-
+10. map():- It is used to traverse(visit) every element in the array.
+-It uses a callback function as an argument. 
+-Callback function uses accumulator as an argument, where each item will store once at a time starting from zero index.
+Syntax:- array.map((item)=>{
+    //instruction
+})
+
+11. filter():- It is used to traverse every element in the array and it will return a sub-array based on some condition.
+-If the condition is true then it will return the value else it will skip.
+Syntax:- array.filter((item)=>{
+    return condition;
+})
+
+12. reduce():- It is used to reduce multiple elements of an array into a single value.
+-It accepts a callback function that has two arguments; initial value and accumulator.
+Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator, 0)
+
+DOM (Document Object Model) = DOM is a programing interface that provides a structured representation 
+                              of HTML & XML document.
+                          -> It defines the logical structure of documents and the way a document is access 
+                             or manipulated. 
+                          -> It represents the document in a tree like structure where each node represents the part 
+                          of document(elements, attributes, text, comment).
+
+ DOM in js = JS can change all the HTML element in the page. 
+          -> It can beb used to delete or edit any HTML node in the HTML document.
+          -> It can also manipulate css directly.
+
+Window Object = The window object represents and open window in a browser.
+              -> It is a browser object and is automatically created by the browser.
+              -> It is also a global object with all the predefined methods and properties.
+
+DOM selection methods:-
+                    1. getElementById() = It selects an element from the document by id name, which must be 
+                       unique within the document.
+                       syntax:- document.getElementById(""idName).
+                    2. getElementByClassName() = It returns a HTML collection of elements with the specified class name.
+                                               -> syntax = document.getElementByClassName("className).
+                    3. getElementByTagName() = It returns a html collection of elements based on their tag name in the documnet.
+                                              syntax-> document.getElementByTagName("tagName").
+                    4. getElementByName() = Returns a collection of elements with a given name attributes.
+                                          syntax:- document.getElementByName("name").
+                    5. querySelector() = It returns the first element within the document that matches the specified selector.
+                                       -> It uses CSS style selector mechanism to select elements(.className, #idName, tagName).
+                                       syntax = document.querySelector(""selector).
+
+                    6. querySelectorAll() = It is used to select and return the collection to Nodes or elements using 
+                                            CSS selector mechanism.(.className, #idName, tagName).
+                                          ->
+
+                                          syntax = document.querySelectorAll("") 

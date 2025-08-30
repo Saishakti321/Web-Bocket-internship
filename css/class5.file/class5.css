@@ -1,0 +1,82 @@
+.rotate{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* transform: rotatex(50deg);
+     */
+     /* transform: rotatey(50deg); */
+    /* transform: rotatez(40deg); */
+    transform: rotate(45deg);
+
+}
+.scale{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 50px;
+    /* transform: scalex(1.5); */
+    /* transform: scaley(1.5); */
+    /* transform: scale(1.5); */
+   /* transform: scale(1.5, 0.5); */
+}
+.translate{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    /* transform: translatex(50px); */
+    /* transform: translatey(50px); */
+    /* transform: translate(50px); */
+    transform: translate(50px, 50px);
+    /* transform: translate(-50px, -50px); */
+}
+
+.skew{
+    height: 200px;
+    width: 200px;
+    margin: 80px;
+    background-color: orange;
+    /* transform: skewx(20deg); */
+    /* transform: skewx(-20deg); */
+    /* transform: skewy(20deg); */
+    /* transform: skew(20deg, 10deg); */
+    /* transform: skew(-20deg, 10deg); */
+    transform: skew(20deg);
+    border-radius: 10px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    margin: 50px;
+    /* transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; */
+    transition: transform 2s ease-in-out ;
+    
+
+
+    
+}
+.box:hover{
+    transform: scale(1.5);
+}
+#btn{
+    font-size: 20px;
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+   padding: 15px 30px;
+    transition: transform 0.9s ease-in-out;
+    cursor: pointer;
+    
+}
+#btn:hover{
+    background-color: aqua;
+}
+#btn:active{
+    background-color: antiquewhite;
+    transform: scale(0.98);
+}
+

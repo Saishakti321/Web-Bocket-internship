@@ -66,9 +66,9 @@
     width: 200px;
     padding: 20px;
     color: red;
-    /* padding: 20px 10px; */
-    /* padding: 20px 10px 30px; */
-    /* padding: 20px 10px 30px 40px; */
+    padding: 20px 10px;
+    padding: 20px 10px 30px;
+    padding: 20px 10px 30px 40px;
     /* padding-bottom: 50px; */
     /* border-width: 10px;
     border-style: solid;
